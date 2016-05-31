@@ -4,7 +4,7 @@ Mobile app usando cordova e ionic/ Mobile app built with cordova + ionic
 web client for consuming node.js rest api, hosted on heroku.
 
 Running on web browser:
-<a href="http://i.imgur.com/lnSep7O.png" /a>
+![web](http://i.imgur.com/lnSep7O.png)
 
 
 ## Dependencias/Dependencies
