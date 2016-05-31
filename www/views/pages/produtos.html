@@ -1,0 +1,45 @@
+<div class="jumbotron text-center" >
+    <h1>{{produtos.message}}</h1>
+</div>
+
+<div class="page-header">   
+    <h3 >
+        <a ui-sref="produtos-create" class="btn btn-default">
+            <span class="glyphicon glyphicon-plus"></span>
+        </a> New
+    </h3>
+    
+</div>
+<!-- LOADING MESSAGE -->
+
+<div class="jumbotron text-center" ng-show="produtos.processing">
+	<span class="glyphicon glyphicon-repeat spinner"></span>
+	<p>Carregando...</p>
+</div>
+
+<table class="table table-bordered table-striped" ng-show="produtos.produtosList">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Category</th>
+			<th class="col-sm-2"></th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<!-- Loop over the users -->
+		<tr ng-repeat="produto in produtos.produtosList">
+			<td>{{produto.name}}</td>
+			<td>{{produto.category}}</td>
+			<td class="col-sm-2">
+				<a ui-sref="produtos-edit({ produto_id: produto._id })"
+                   class="btn btn-danger"> Edit
+                </a>
+                
+				<a href="" ng-click="produtos.delete(produto._id)" 
+                   class="btn btn-primary"> Delete
+                </a>
+			</td>
+		</tr>
+	</tbody>
+</table>	
