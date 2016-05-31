@@ -3,6 +3,10 @@ Mobile app usando cordova e ionic/ Mobile app built with cordova + ionic
 ## Sumário / Summary 
 web client for consuming node.js rest api, hosted on heroku.
 
+
+Running on Device:
+![device](http://i.imgur.com/K5ins3e.jpg)
+
 Running on web browser:
 ![web](http://i.imgur.com/lnSep7O.png)
 
